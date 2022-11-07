@@ -70,3 +70,13 @@ test_invalid_email_or_mobile_phone
 test_authorisation_valid
 
 Тест-кейс N-16 Тестирование аутентификации зарегестрированного пользователя
+# How To Run Tests
+Install all requirements:
+
+pip install -r requirements.txt
+Download Selenium WebDriver from https://chromedriver.chromium.org/downloads (choose version which is compatible with your browser)
+
+Run tests:
+
+pytest -v --driver Chrome --driver-path ~/chrome autotests_rostelecom.py
+Note: ~/chrome in this example is the file of Selenium WebDriver downloaded and unarchived on step #2.
